@@ -1,3 +1,4 @@
+Encoding.default_internal = "UTF-8"
 require 'fileutils'
 require 'win32ole'
 

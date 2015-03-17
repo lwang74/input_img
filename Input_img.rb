@@ -1,25 +1,17 @@
-# require 'cfg'
+Encoding.default_internal = "UTF-8"
 require './excel.rb'
-# require 'db_com'
-
-#~ 1 荣誉
-#~ 2 学科
-#~ 3 体育
-#~ 4 艺术
-#~ 5 其他
 
 class Huojiang
 	def initialize img_path
 		@img_path=img_path
 		@types={
 			'荣誉类'=>1,
-			# '荣誉类'=>1,
 			'学科类'=>2,
 			'艺术类'=>3,
 			'体育类'=>4,
 			'其它类'=>5
 		}
-		puts @types['荣誉类'] #.map{|k,v| k}
+		# puts @types.map{|k,v| k}
 		# p @types
 	end
 	
@@ -62,8 +54,7 @@ class Huojiang
 			out.puts "Use XX2012"
 			out.puts "GO"
 			@data.each{|one|
-			puts one[0]
-				p one[2]
+				# puts one
 				type=@types[one[2]]
 				year = one[3]
 				if year.class==Float
@@ -74,12 +65,13 @@ class Huojiang
 					pic = "#{one[0]}.jpg"
 				end
 				if type
+					puts one[1]
 					output_one_persion(out, one[1], type, year, one[4], pic)
 				else
 					# puts "#{one[1]}: 类别错。现在的类别是：'#{one[2]}'。允许的类别:'#{@types.map{|k, v| k}.join(', ')}'"
 					# puts "#{one[1]}: type error. type is '#{one[2]}'. types allowed: '#{@types.map{|k, v| k}.join(', ')}'"
 					p one[2]
-					p @types[one[2]]
+					# p @types[one[2]]
 					puts "Error!!!=>'#{one[2]}'"
 				end
 			}
@@ -96,30 +88,30 @@ class Huojiang
 	protected
 	def output_one_persion out, persion_id, type, date, context, pic
 		#~ p pic
-		sql=<<AAA
-If not exists (Select * from [XX2012].[dbo].[JKHUOJIANG] 
-	where xh='#{persion_id}' and hjlb=#{type} and hjjf='#{date}' and hjnr=N'#{context}')
-	Begin
-	Print '#{persion_id}:'
-	Insert into [XX2012].[dbo].[JKHUOJIANG] ([hjxh], [xh], [hjlb]
-	      ,[hjjf], [cjsj], [hjnr], [hjzt], [ts] 
-	      ,[fj1]
-	) 
-	Select NEWID(), '#{persion_id}',  #{type}, '#{date}', GETDATE(), N'#{context}', 3, null
-		, BulkColumn from Openrowset( Bulk '#{@img_path}\\#{pic}', Single_Blob) as a
-	end
-GO
-AAA
+		sql=<<-AAA
+			If not exists (Select * from [XX2012].[dbo].[JKHUOJIANG] 
+				where xh='#{persion_id}' and hjlb=#{type} and hjjf='#{date}' and hjnr=N'#{context}')
+				Begin
+				Print '#{persion_id}:'
+				Insert into [XX2012].[dbo].[JKHUOJIANG] ([hjxh], [xh], [hjlb]
+				      ,[hjjf], [cjsj], [hjnr], [hjzt], [ts] 
+				      ,[fj1]
+				) 
+				Select NEWID(), '#{persion_id}',  #{type}, '#{date}', GETDATE(), N'#{context}', 3, null
+					, BulkColumn from Openrowset( Bulk '#{@img_path}\\#{pic}', Single_Blob) as a
+				end
+			GO
+		AAA
 		#~ p sql
 		out.puts sql
 	end
 
 	def ins_one_persion dbh, persion_id, type, date, context, pic
 		#~ p pic
-		sql=<<AAA
-	Select count(*) cnt from [XX2012].[dbo].[JKHUOJIANG] 
-		where xh='#{persion_id}' and hjlb=#{type} and hjjf='#{date}' and hjnr=N'#{context}'
-AAA
+		sql=<<-AAA
+			Select count(*) cnt from [XX2012].[dbo].[JKHUOJIANG] 
+				where xh='#{persion_id}' and hjlb=#{type} and hjjf='#{date}' and hjnr=N'#{context}'
+		AAA
 		sth=dbh.execute(sql)
 		cnt=0
 		while row=sth.fetch do
@@ -129,14 +121,14 @@ AAA
 		#~ p cnt
 		if 0==cnt
 			puts "#{persion_id}"
-		sql=<<AAA
-	Insert into [XX2012].[dbo].[JKHUOJIANG] ([hjxh], [xh], [hjlb]
-	      ,[hjjf], [cjsj], [hjnr], [hjzt], [ts] 
-	      ,[fj1]
-	) 
-	Select NEWID(), '#{persion_id}',  #{type}, '#{date}', GETDATE(), N'#{context}', 3, null
-		, BulkColumn from Openrowset( Bulk '#{@img_path}\\#{pic}', Single_Blob) as a
-AAA
+		sql=<<-AAA
+			Insert into [XX2012].[dbo].[JKHUOJIANG] ([hjxh], [xh], [hjlb]
+			      ,[hjjf], [cjsj], [hjnr], [hjzt], [ts] 
+			      ,[fj1]
+			) 
+			Select NEWID(), '#{persion_id}',  #{type}, '#{date}', GETDATE(), N'#{context}', 3, null
+				, BulkColumn from Openrowset( Bulk '#{@img_path}\\#{pic}', Single_Blob) as a
+		AAA
 
 		dbh.do(sql)
 		dbh.commit

@@ -1,278 +1,278 @@
 Use XX2012
 GO
-If not exists (Select * from [XX2012].[dbo].[JKHUOJIANG] 
-	where xh='j120406152' and hjlb=1 and hjjf='2014' and hjnr=N'Çø¼¶ÎÄÃ÷Ñ§Éú')
-	Begin
-	Print 'j120406152:'
-	Insert into [XX2012].[dbo].[JKHUOJIANG] ([hjxh], [xh], [hjlb]
-	      ,[hjjf], [cjsj], [hjnr], [hjzt], [ts] 
-	      ,[fj1]
-	) 
-	Select NEWID(), 'j120406152',  1, '2014', GETDATE(), N'Çø¼¶ÎÄÃ÷Ñ§Éú', 3, null
-		, BulkColumn from Openrowset( Bulk 'd:\lyx\input_img\huojiang\pics\img001.jpg.jpg', Single_Blob) as a
-	end
-GO
-If not exists (Select * from [XX2012].[dbo].[JKHUOJIANG] 
-	where xh='j120406164' and hjlb=1 and hjjf='2015' and hjnr=N'ÊĞ¼¶ÎÄÃ÷Ñ§Éú')
-	Begin
-	Print 'j120406164:'
-	Insert into [XX2012].[dbo].[JKHUOJIANG] ([hjxh], [xh], [hjlb]
-	      ,[hjjf], [cjsj], [hjnr], [hjzt], [ts] 
-	      ,[fj1]
-	) 
-	Select NEWID(), 'j120406164',  1, '2015', GETDATE(), N'ÊĞ¼¶ÎÄÃ÷Ñ§Éú', 3, null
-		, BulkColumn from Openrowset( Bulk 'd:\lyx\input_img\huojiang\pics\img002.jpg.jpg', Single_Blob) as a
-	end
-GO
-If not exists (Select * from [XX2012].[dbo].[JKHUOJIANG] 
-	where xh='j120406175' and hjlb=1 and hjjf='2014' and hjnr=N'Çø¼¶ÎÄÃ÷Ñ§Éú')
-	Begin
-	Print 'j120406175:'
-	Insert into [XX2012].[dbo].[JKHUOJIANG] ([hjxh], [xh], [hjlb]
-	      ,[hjjf], [cjsj], [hjnr], [hjzt], [ts] 
-	      ,[fj1]
-	) 
-	Select NEWID(), 'j120406175',  1, '2014', GETDATE(), N'Çø¼¶ÎÄÃ÷Ñ§Éú', 3, null
-		, BulkColumn from Openrowset( Bulk 'd:\lyx\input_img\huojiang\pics\img003.jpg.jpg', Single_Blob) as a
-	end
-GO
-If not exists (Select * from [XX2012].[dbo].[JKHUOJIANG] 
-	where xh='j120406287' and hjlb=1 and hjjf='2015' and hjnr=N'ÊĞ¼¶ÎÄÃ÷Ñ§Éú')
-	Begin
-	Print 'j120406287:'
-	Insert into [XX2012].[dbo].[JKHUOJIANG] ([hjxh], [xh], [hjlb]
-	      ,[hjjf], [cjsj], [hjnr], [hjzt], [ts] 
-	      ,[fj1]
-	) 
-	Select NEWID(), 'j120406287',  1, '2015', GETDATE(), N'ÊĞ¼¶ÎÄÃ÷Ñ§Éú', 3, null
-		, BulkColumn from Openrowset( Bulk 'd:\lyx\input_img\huojiang\pics\img004.jpg.jpg', Single_Blob) as a
-	end
-GO
-If not exists (Select * from [XX2012].[dbo].[JKHUOJIANG] 
-	where xh='j120406163' and hjlb=4 and hjjf='2014' and hjnr=N'Ìì½òÊĞµÚÊ®Èı½ìÔË¶¯»á»÷½£±ÈÈüÄĞ×Ó»¨½£ÉÙÄêÒÒ×é(ÍÅÌå)µÚ¶şÃû')
-	Begin
-	Print 'j120406163:'
-	Insert into [XX2012].[dbo].[JKHUOJIANG] ([hjxh], [xh], [hjlb]
-	      ,[hjjf], [cjsj], [hjnr], [hjzt], [ts] 
-	      ,[fj1]
-	) 
-	Select NEWID(), 'j120406163',  4, '2014', GETDATE(), N'Ìì½òÊĞµÚÊ®Èı½ìÔË¶¯»á»÷½£±ÈÈüÄĞ×Ó»¨½£ÉÙÄêÒÒ×é(ÍÅÌå)µÚ¶şÃû', 3, null
-		, BulkColumn from Openrowset( Bulk 'd:\lyx\input_img\huojiang\pics\img005.jpg.jpg', Single_Blob) as a
-	end
-GO
-If not exists (Select * from [XX2012].[dbo].[JKHUOJIANG] 
-	where xh='j120406145' and hjlb=2 and hjjf='2014' and hjnr=N'µÚÊ®Èı½ìÖĞ¹úÈÕ±¨Éç"21ÊÀ¼Í±­"È«¹úÖĞĞ¡Ñ§ÉúÓ¢ÓïÑİ½²±ÈÈüÌì½òÈüÇø¾öÈü³õÖĞ×é¶şµÈ½±')
-	Begin
-	Print 'j120406145:'
-	Insert into [XX2012].[dbo].[JKHUOJIANG] ([hjxh], [xh], [hjlb]
-	      ,[hjjf], [cjsj], [hjnr], [hjzt], [ts] 
-	      ,[fj1]
-	) 
-	Select NEWID(), 'j120406145',  2, '2014', GETDATE(), N'µÚÊ®Èı½ìÖĞ¹úÈÕ±¨Éç"21ÊÀ¼Í±­"È«¹úÖĞĞ¡Ñ§ÉúÓ¢ÓïÑİ½²±ÈÈüÌì½òÈüÇø¾öÈü³õÖĞ×é¶şµÈ½±', 3, null
-		, BulkColumn from Openrowset( Bulk 'd:\lyx\input_img\huojiang\pics\img006.jpg.jpg', Single_Blob) as a
-	end
-GO
-If not exists (Select * from [XX2012].[dbo].[JKHUOJIANG] 
-	where xh='j120406145' and hjlb=2 and hjjf='2014' and hjnr=N'µÚÊ®Èı½ìÖĞ¹úÈÕ±¨Éç"21ÊÀ¼Í±­"È«¹úÖĞĞ¡Ñ§ÉúÓ¢ÓïÑİ½²±ÈÈüÌì½òÈüÇø°ë¾öÈü³õÖĞ×é¼¾¾ü')
-	Begin
-	Print 'j120406145:'
-	Insert into [XX2012].[dbo].[JKHUOJIANG] ([hjxh], [xh], [hjlb]
-	      ,[hjjf], [cjsj], [hjnr], [hjzt], [ts] 
-	      ,[fj1]
-	) 
-	Select NEWID(), 'j120406145',  2, '2014', GETDATE(), N'µÚÊ®Èı½ìÖĞ¹úÈÕ±¨Éç"21ÊÀ¼Í±­"È«¹úÖĞĞ¡Ñ§ÉúÓ¢ÓïÑİ½²±ÈÈüÌì½òÈüÇø°ë¾öÈü³õÖĞ×é¼¾¾ü', 3, null
-		, BulkColumn from Openrowset( Bulk 'd:\lyx\input_img\huojiang\pics\img007.jpg.jpg', Single_Blob) as a
-	end
-GO
-If not exists (Select * from [XX2012].[dbo].[JKHUOJIANG] 
-	where xh='j120406163' and hjlb=4 and hjjf='2014' and hjnr=N'Ìì½òÊĞµÚÊ®Èı½ìÔË¶¯»á»÷½£±ÈÈüÄĞ×Ó»¨½£ÉÙÄêÒÒ×é(¸öÈË)µÚÈıÃû')
-	Begin
-	Print 'j120406163:'
-	Insert into [XX2012].[dbo].[JKHUOJIANG] ([hjxh], [xh], [hjlb]
-	      ,[hjjf], [cjsj], [hjnr], [hjzt], [ts] 
-	      ,[fj1]
-	) 
-	Select NEWID(), 'j120406163',  4, '2014', GETDATE(), N'Ìì½òÊĞµÚÊ®Èı½ìÔË¶¯»á»÷½£±ÈÈüÄĞ×Ó»¨½£ÉÙÄêÒÒ×é(¸öÈË)µÚÈıÃû', 3, null
-		, BulkColumn from Openrowset( Bulk 'd:\lyx\input_img\huojiang\pics\img008.jpg.jpg', Single_Blob) as a
-	end
-GO
-If not exists (Select * from [XX2012].[dbo].[JKHUOJIANG] 
-	where xh='j120406276' and hjlb=1 and hjjf='2014' and hjnr=N'Çø¼¶ÎÄÃ÷Ñ§Éú')
-	Begin
-	Print 'j120406276:'
-	Insert into [XX2012].[dbo].[JKHUOJIANG] ([hjxh], [xh], [hjlb]
-	      ,[hjjf], [cjsj], [hjnr], [hjzt], [ts] 
-	      ,[fj1]
-	) 
-	Select NEWID(), 'j120406276',  1, '2014', GETDATE(), N'Çø¼¶ÎÄÃ÷Ñ§Éú', 3, null
-		, BulkColumn from Openrowset( Bulk 'd:\lyx\input_img\huojiang\pics\img009.jpg.jpg', Single_Blob) as a
-	end
-GO
-If not exists (Select * from [XX2012].[dbo].[JKHUOJIANG] 
-	where xh='j120406253' and hjlb=1 and hjjf='2014' and hjnr=N'ÊĞ¼¶ÎÄÃ÷Ñ§Éú')
-	Begin
-	Print 'j120406253:'
-	Insert into [XX2012].[dbo].[JKHUOJIANG] ([hjxh], [xh], [hjlb]
-	      ,[hjjf], [cjsj], [hjnr], [hjzt], [ts] 
-	      ,[fj1]
-	) 
-	Select NEWID(), 'j120406253',  1, '2014', GETDATE(), N'ÊĞ¼¶ÎÄÃ÷Ñ§Éú', 3, null
-		, BulkColumn from Openrowset( Bulk 'd:\lyx\input_img\huojiang\pics\img010.jpg.jpg', Single_Blob) as a
-	end
-GO
-If not exists (Select * from [XX2012].[dbo].[JKHUOJIANG] 
-	where xh='j120406260' and hjlb=1 and hjjf='2014' and hjnr=N'Çø¼¶ÎÄÃ÷Ñ§Éú')
-	Begin
-	Print 'j120406260:'
-	Insert into [XX2012].[dbo].[JKHUOJIANG] ([hjxh], [xh], [hjlb]
-	      ,[hjjf], [cjsj], [hjnr], [hjzt], [ts] 
-	      ,[fj1]
-	) 
-	Select NEWID(), 'j120406260',  1, '2014', GETDATE(), N'Çø¼¶ÎÄÃ÷Ñ§Éú', 3, null
-		, BulkColumn from Openrowset( Bulk 'd:\lyx\input_img\huojiang\pics\img011.jpg.jpg', Single_Blob) as a
-	end
-GO
-If not exists (Select * from [XX2012].[dbo].[JKHUOJIANG] 
-	where xh='j120406251' and hjlb=2 and hjjf='2014' and hjnr=N'Ìì½òÊĞÇàÉÙÄê¿Æ¼¼´´ĞÂ´óÈüÎŞÏßµç¹¤³Ì±ÈÈüÈıµÈ½±')
-	Begin
-	Print 'j120406251:'
-	Insert into [XX2012].[dbo].[JKHUOJIANG] ([hjxh], [xh], [hjlb]
-	      ,[hjjf], [cjsj], [hjnr], [hjzt], [ts] 
-	      ,[fj1]
-	) 
-	Select NEWID(), 'j120406251',  2, '2014', GETDATE(), N'Ìì½òÊĞÇàÉÙÄê¿Æ¼¼´´ĞÂ´óÈüÎŞÏßµç¹¤³Ì±ÈÈüÈıµÈ½±', 3, null
-		, BulkColumn from Openrowset( Bulk 'd:\lyx\input_img\huojiang\pics\img012.jpg.jpg', Single_Blob) as a
-	end
-GO
-If not exists (Select * from [XX2012].[dbo].[JKHUOJIANG] 
-	where xh='j120406024' and hjlb=1 and hjjf='2014' and hjnr=N'Ğ£¼¶ÈıºÃÑ§Éú')
-	Begin
-	Print 'j120406024:'
-	Insert into [XX2012].[dbo].[JKHUOJIANG] ([hjxh], [xh], [hjlb]
-	      ,[hjjf], [cjsj], [hjnr], [hjzt], [ts] 
-	      ,[fj1]
-	) 
-	Select NEWID(), 'j120406024',  1, '2014', GETDATE(), N'Ğ£¼¶ÈıºÃÑ§Éú', 3, null
-		, BulkColumn from Openrowset( Bulk 'd:\lyx\input_img\huojiang\pics\img013.jpg.jpg', Single_Blob) as a
-	end
-GO
-If not exists (Select * from [XX2012].[dbo].[JKHUOJIANG] 
-	where xh='j120406019' and hjlb=1 and hjjf='2014' and hjnr=N'ÊĞ¼¶ÎÄÃ÷Ñ§Éú')
-	Begin
-	Print 'j120406019:'
-	Insert into [XX2012].[dbo].[JKHUOJIANG] ([hjxh], [xh], [hjlb]
-	      ,[hjjf], [cjsj], [hjnr], [hjzt], [ts] 
-	      ,[fj1]
-	) 
-	Select NEWID(), 'j120406019',  1, '2014', GETDATE(), N'ÊĞ¼¶ÎÄÃ÷Ñ§Éú', 3, null
-		, BulkColumn from Openrowset( Bulk 'd:\lyx\input_img\huojiang\pics\img014.jpg.jpg', Single_Blob) as a
-	end
-GO
-If not exists (Select * from [XX2012].[dbo].[JKHUOJIANG] 
-	where xh='j120406011' and hjlb=2 and hjjf='2014' and hjnr=N'2014-2015Ñ§Äê¶ÈÖĞÑ§(³õÖĞ Î÷»­)ÒÕÊõÌØ³¤Éú¿¼ºËÈÏ¶¨ÖĞ³É¼¨ºÏ¸ñ')
-	Begin
-	Print 'j120406011:'
-	Insert into [XX2012].[dbo].[JKHUOJIANG] ([hjxh], [xh], [hjlb]
-	      ,[hjjf], [cjsj], [hjnr], [hjzt], [ts] 
-	      ,[fj1]
-	) 
-	Select NEWID(), 'j120406011',  2, '2014', GETDATE(), N'2014-2015Ñ§Äê¶ÈÖĞÑ§(³õÖĞ Î÷»­)ÒÕÊõÌØ³¤Éú¿¼ºËÈÏ¶¨ÖĞ³É¼¨ºÏ¸ñ', 3, null
-		, BulkColumn from Openrowset( Bulk 'd:\lyx\input_img\huojiang\pics\img015.jpg.jpg', Single_Blob) as a
-	end
-GO
-If not exists (Select * from [XX2012].[dbo].[JKHUOJIANG] 
-	where xh='j120406034' and hjlb=2 and hjjf='2014' and hjnr=N'2014-2015Ñ§Äê¶ÈÖĞÑ§(³õÖĞ Îèµ¸)ÒÕÊõÌØ³¤Éú¿¼ºËÈÏ¶¨ÖĞ³É¼¨ºÏ¸ñ')
-	Begin
-	Print 'j120406034:'
-	Insert into [XX2012].[dbo].[JKHUOJIANG] ([hjxh], [xh], [hjlb]
-	      ,[hjjf], [cjsj], [hjnr], [hjzt], [ts] 
-	      ,[fj1]
-	) 
-	Select NEWID(), 'j120406034',  2, '2014', GETDATE(), N'2014-2015Ñ§Äê¶ÈÖĞÑ§(³õÖĞ Îèµ¸)ÒÕÊõÌØ³¤Éú¿¼ºËÈÏ¶¨ÖĞ³É¼¨ºÏ¸ñ', 3, null
-		, BulkColumn from Openrowset( Bulk 'd:\lyx\input_img\huojiang\pics\img016.jpg.jpg', Single_Blob) as a
-	end
-GO
-If not exists (Select * from [XX2012].[dbo].[JKHUOJIANG] 
-	where xh='j120406234' and hjlb=1 and hjjf='2014' and hjnr=N'ÊĞ¼¶ÎÄÃ÷Ñ§Éú')
-	Begin
-	Print 'j120406234:'
-	Insert into [XX2012].[dbo].[JKHUOJIANG] ([hjxh], [xh], [hjlb]
-	      ,[hjjf], [cjsj], [hjnr], [hjzt], [ts] 
-	      ,[fj1]
-	) 
-	Select NEWID(), 'j120406234',  1, '2014', GETDATE(), N'ÊĞ¼¶ÎÄÃ÷Ñ§Éú', 3, null
-		, BulkColumn from Openrowset( Bulk 'd:\lyx\input_img\huojiang\pics\img017.jpg.jpg', Single_Blob) as a
-	end
-GO
-If not exists (Select * from [XX2012].[dbo].[JKHUOJIANG] 
-	where xh='j120406338' and hjlb=3 and hjjf='2012' and hjnr=N'µÚÁù½ìÖĞ»ªÇéÒÕÊõ·ç²É¹ú¼Ê½»Á÷Õ¹ÑİÈÙ»ñ¸ÖÇÙ×¨ÒµÉÙÄêA×éÒø½±')
-	Begin
-	Print 'j120406338:'
-	Insert into [XX2012].[dbo].[JKHUOJIANG] ([hjxh], [xh], [hjlb]
-	      ,[hjjf], [cjsj], [hjnr], [hjzt], [ts] 
-	      ,[fj1]
-	) 
-	Select NEWID(), 'j120406338',  3, '2012', GETDATE(), N'µÚÁù½ìÖĞ»ªÇéÒÕÊõ·ç²É¹ú¼Ê½»Á÷Õ¹ÑİÈÙ»ñ¸ÖÇÙ×¨ÒµÉÙÄêA×éÒø½±', 3, null
-		, BulkColumn from Openrowset( Bulk 'd:\lyx\input_img\huojiang\pics\img018.jpg.jpg', Single_Blob) as a
-	end
-GO
-If not exists (Select * from [XX2012].[dbo].[JKHUOJIANG] 
-	where xh='j120406241' and hjlb=2 and hjjf='2014' and hjnr=N'"ÃÀÀöÖĞ¹ú ÎÒµÄÖĞ¹úÃÎ"¶ÁÊé½ÌÓı»î¶¯ÖĞ,ÖĞÑ§Ñİ½²ÓÅĞã½±')
-	Begin
-	Print 'j120406241:'
-	Insert into [XX2012].[dbo].[JKHUOJIANG] ([hjxh], [xh], [hjlb]
-	      ,[hjjf], [cjsj], [hjnr], [hjzt], [ts] 
-	      ,[fj1]
-	) 
-	Select NEWID(), 'j120406241',  2, '2014', GETDATE(), N'"ÃÀÀöÖĞ¹ú ÎÒµÄÖĞ¹úÃÎ"¶ÁÊé½ÌÓı»î¶¯ÖĞ,ÖĞÑ§Ñİ½²ÓÅĞã½±', 3, null
-		, BulkColumn from Openrowset( Bulk 'd:\lyx\input_img\huojiang\pics\img019.jpg.jpg', Single_Blob) as a
-	end
-GO
-If not exists (Select * from [XX2012].[dbo].[JKHUOJIANG] 
-	where xh='j120406218' and hjlb=1 and hjjf='2014' and hjnr=N'Ğ£¼¶ÈıºÃÑ§Éú')
-	Begin
-	Print 'j120406218:'
-	Insert into [XX2012].[dbo].[JKHUOJIANG] ([hjxh], [xh], [hjlb]
-	      ,[hjjf], [cjsj], [hjnr], [hjzt], [ts] 
-	      ,[fj1]
-	) 
-	Select NEWID(), 'j120406218',  1, '2014', GETDATE(), N'Ğ£¼¶ÈıºÃÑ§Éú', 3, null
-		, BulkColumn from Openrowset( Bulk 'd:\lyx\input_img\huojiang\pics\img020.jpg.jpg', Single_Blob) as a
-	end
-GO
-If not exists (Select * from [XX2012].[dbo].[JKHUOJIANG] 
-	where xh='j120406218' and hjlb=1 and hjjf='2014' and hjnr=N'Çø¼¶ÎÄÃ÷Ñ§Éú')
-	Begin
-	Print 'j120406218:'
-	Insert into [XX2012].[dbo].[JKHUOJIANG] ([hjxh], [xh], [hjlb]
-	      ,[hjjf], [cjsj], [hjnr], [hjzt], [ts] 
-	      ,[fj1]
-	) 
-	Select NEWID(), 'j120406218',  1, '2014', GETDATE(), N'Çø¼¶ÎÄÃ÷Ñ§Éú', 3, null
-		, BulkColumn from Openrowset( Bulk 'd:\lyx\input_img\huojiang\pics\img021.jpg.jpg', Single_Blob) as a
-	end
-GO
-If not exists (Select * from [XX2012].[dbo].[JKHUOJIANG] 
-	where xh='j120406218' and hjlb=4 and hjjf='2014' and hjnr=N'2014ÄêÌì½òÊĞ´óÖÚõÌÈ­µÀ¹«¿ªÈüÍÅÌå¶şµÈ½±')
-	Begin
-	Print 'j120406218:'
-	Insert into [XX2012].[dbo].[JKHUOJIANG] ([hjxh], [xh], [hjlb]
-	      ,[hjjf], [cjsj], [hjnr], [hjzt], [ts] 
-	      ,[fj1]
-	) 
-	Select NEWID(), 'j120406218',  4, '2014', GETDATE(), N'2014ÄêÌì½òÊĞ´óÖÚõÌÈ­µÀ¹«¿ªÈüÍÅÌå¶şµÈ½±', 3, null
-		, BulkColumn from Openrowset( Bulk 'd:\lyx\input_img\huojiang\pics\img022.jpg.jpg', Single_Blob) as a
-	end
-GO
-If not exists (Select * from [XX2012].[dbo].[JKHUOJIANG] 
-	where xh='j120406218' and hjlb=2 and hjjf='2013' and hjnr=N'µÚÊ®Èı½ìÖĞ¹úÈÕ±¨Éç"21ÊÀ¼Í±­"È«¹úÖĞĞ¡Ñ§ÉúÓ¢ÓïÑİ½²±ÈÈüÌì½òÈüÇø¾öÈü³õÖĞ×éÈıµÈ½±')
-	Begin
-	Print 'j120406218:'
-	Insert into [XX2012].[dbo].[JKHUOJIANG] ([hjxh], [xh], [hjlb]
-	      ,[hjjf], [cjsj], [hjnr], [hjzt], [ts] 
-	      ,[fj1]
-	) 
-	Select NEWID(), 'j120406218',  2, '2013', GETDATE(), N'µÚÊ®Èı½ìÖĞ¹úÈÕ±¨Éç"21ÊÀ¼Í±­"È«¹úÖĞĞ¡Ñ§ÉúÓ¢ÓïÑİ½²±ÈÈüÌì½òÈüÇø¾öÈü³õÖĞ×éÈıµÈ½±', 3, null
-		, BulkColumn from Openrowset( Bulk 'd:\lyx\input_img\huojiang\pics\img023.jpg.jpg', Single_Blob) as a
-	end
-GO
+			If not exists (Select * from [XX2012].[dbo].[JKHUOJIANG] 
+				where xh='j120406152' and hjlb=1 and hjjf='2014' and hjnr=N'åŒºçº§æ–‡æ˜å­¦ç”Ÿ')
+				Begin
+				Print 'j120406152:'
+				Insert into [XX2012].[dbo].[JKHUOJIANG] ([hjxh], [xh], [hjlb]
+				      ,[hjjf], [cjsj], [hjnr], [hjzt], [ts] 
+				      ,[fj1]
+				) 
+				Select NEWID(), 'j120406152',  1, '2014', GETDATE(), N'åŒºçº§æ–‡æ˜å­¦ç”Ÿ', 3, null
+					, BulkColumn from Openrowset( Bulk 'd:\lyx\input_img\huojiang\pics\img001.jpg.jpg', Single_Blob) as a
+				end
+			GO
+			If not exists (Select * from [XX2012].[dbo].[JKHUOJIANG] 
+				where xh='j120406164' and hjlb=1 and hjjf='2015' and hjnr=N'å¸‚çº§æ–‡æ˜å­¦ç”Ÿ')
+				Begin
+				Print 'j120406164:'
+				Insert into [XX2012].[dbo].[JKHUOJIANG] ([hjxh], [xh], [hjlb]
+				      ,[hjjf], [cjsj], [hjnr], [hjzt], [ts] 
+				      ,[fj1]
+				) 
+				Select NEWID(), 'j120406164',  1, '2015', GETDATE(), N'å¸‚çº§æ–‡æ˜å­¦ç”Ÿ', 3, null
+					, BulkColumn from Openrowset( Bulk 'd:\lyx\input_img\huojiang\pics\img002.jpg.jpg', Single_Blob) as a
+				end
+			GO
+			If not exists (Select * from [XX2012].[dbo].[JKHUOJIANG] 
+				where xh='j120406175' and hjlb=1 and hjjf='2014' and hjnr=N'åŒºçº§æ–‡æ˜å­¦ç”Ÿ')
+				Begin
+				Print 'j120406175:'
+				Insert into [XX2012].[dbo].[JKHUOJIANG] ([hjxh], [xh], [hjlb]
+				      ,[hjjf], [cjsj], [hjnr], [hjzt], [ts] 
+				      ,[fj1]
+				) 
+				Select NEWID(), 'j120406175',  1, '2014', GETDATE(), N'åŒºçº§æ–‡æ˜å­¦ç”Ÿ', 3, null
+					, BulkColumn from Openrowset( Bulk 'd:\lyx\input_img\huojiang\pics\img003.jpg.jpg', Single_Blob) as a
+				end
+			GO
+			If not exists (Select * from [XX2012].[dbo].[JKHUOJIANG] 
+				where xh='j120406287' and hjlb=1 and hjjf='2015' and hjnr=N'å¸‚çº§æ–‡æ˜å­¦ç”Ÿ')
+				Begin
+				Print 'j120406287:'
+				Insert into [XX2012].[dbo].[JKHUOJIANG] ([hjxh], [xh], [hjlb]
+				      ,[hjjf], [cjsj], [hjnr], [hjzt], [ts] 
+				      ,[fj1]
+				) 
+				Select NEWID(), 'j120406287',  1, '2015', GETDATE(), N'å¸‚çº§æ–‡æ˜å­¦ç”Ÿ', 3, null
+					, BulkColumn from Openrowset( Bulk 'd:\lyx\input_img\huojiang\pics\img004.jpg.jpg', Single_Blob) as a
+				end
+			GO
+			If not exists (Select * from [XX2012].[dbo].[JKHUOJIANG] 
+				where xh='j120406163' and hjlb=4 and hjjf='2014' and hjnr=N'å¤©æ´¥å¸‚ç¬¬åä¸‰å±Šè¿åŠ¨ä¼šå‡»å‰‘æ¯”èµ›ç”·å­èŠ±å‰‘å°‘å¹´ä¹™ç»„(å›¢ä½“)ç¬¬äºŒå')
+				Begin
+				Print 'j120406163:'
+				Insert into [XX2012].[dbo].[JKHUOJIANG] ([hjxh], [xh], [hjlb]
+				      ,[hjjf], [cjsj], [hjnr], [hjzt], [ts] 
+				      ,[fj1]
+				) 
+				Select NEWID(), 'j120406163',  4, '2014', GETDATE(), N'å¤©æ´¥å¸‚ç¬¬åä¸‰å±Šè¿åŠ¨ä¼šå‡»å‰‘æ¯”èµ›ç”·å­èŠ±å‰‘å°‘å¹´ä¹™ç»„(å›¢ä½“)ç¬¬äºŒå', 3, null
+					, BulkColumn from Openrowset( Bulk 'd:\lyx\input_img\huojiang\pics\img005.jpg.jpg', Single_Blob) as a
+				end
+			GO
+			If not exists (Select * from [XX2012].[dbo].[JKHUOJIANG] 
+				where xh='j120406145' and hjlb=2 and hjjf='2014' and hjnr=N'ç¬¬åä¸‰å±Šä¸­å›½æ—¥æŠ¥ç¤¾"21ä¸–çºªæ¯"å…¨å›½ä¸­å°å­¦ç”Ÿè‹±è¯­æ¼”è®²æ¯”èµ›å¤©æ´¥èµ›åŒºå†³èµ›åˆä¸­ç»„äºŒç­‰å¥–')
+				Begin
+				Print 'j120406145:'
+				Insert into [XX2012].[dbo].[JKHUOJIANG] ([hjxh], [xh], [hjlb]
+				      ,[hjjf], [cjsj], [hjnr], [hjzt], [ts] 
+				      ,[fj1]
+				) 
+				Select NEWID(), 'j120406145',  2, '2014', GETDATE(), N'ç¬¬åä¸‰å±Šä¸­å›½æ—¥æŠ¥ç¤¾"21ä¸–çºªæ¯"å…¨å›½ä¸­å°å­¦ç”Ÿè‹±è¯­æ¼”è®²æ¯”èµ›å¤©æ´¥èµ›åŒºå†³èµ›åˆä¸­ç»„äºŒç­‰å¥–', 3, null
+					, BulkColumn from Openrowset( Bulk 'd:\lyx\input_img\huojiang\pics\img006.jpg.jpg', Single_Blob) as a
+				end
+			GO
+			If not exists (Select * from [XX2012].[dbo].[JKHUOJIANG] 
+				where xh='j120406145' and hjlb=2 and hjjf='2014' and hjnr=N'ç¬¬åä¸‰å±Šä¸­å›½æ—¥æŠ¥ç¤¾"21ä¸–çºªæ¯"å…¨å›½ä¸­å°å­¦ç”Ÿè‹±è¯­æ¼”è®²æ¯”èµ›å¤©æ´¥èµ›åŒºåŠå†³èµ›åˆä¸­ç»„å­£å†›')
+				Begin
+				Print 'j120406145:'
+				Insert into [XX2012].[dbo].[JKHUOJIANG] ([hjxh], [xh], [hjlb]
+				      ,[hjjf], [cjsj], [hjnr], [hjzt], [ts] 
+				      ,[fj1]
+				) 
+				Select NEWID(), 'j120406145',  2, '2014', GETDATE(), N'ç¬¬åä¸‰å±Šä¸­å›½æ—¥æŠ¥ç¤¾"21ä¸–çºªæ¯"å…¨å›½ä¸­å°å­¦ç”Ÿè‹±è¯­æ¼”è®²æ¯”èµ›å¤©æ´¥èµ›åŒºåŠå†³èµ›åˆä¸­ç»„å­£å†›', 3, null
+					, BulkColumn from Openrowset( Bulk 'd:\lyx\input_img\huojiang\pics\img007.jpg.jpg', Single_Blob) as a
+				end
+			GO
+			If not exists (Select * from [XX2012].[dbo].[JKHUOJIANG] 
+				where xh='j120406163' and hjlb=4 and hjjf='2014' and hjnr=N'å¤©æ´¥å¸‚ç¬¬åä¸‰å±Šè¿åŠ¨ä¼šå‡»å‰‘æ¯”èµ›ç”·å­èŠ±å‰‘å°‘å¹´ä¹™ç»„(ä¸ªäºº)ç¬¬ä¸‰å')
+				Begin
+				Print 'j120406163:'
+				Insert into [XX2012].[dbo].[JKHUOJIANG] ([hjxh], [xh], [hjlb]
+				      ,[hjjf], [cjsj], [hjnr], [hjzt], [ts] 
+				      ,[fj1]
+				) 
+				Select NEWID(), 'j120406163',  4, '2014', GETDATE(), N'å¤©æ´¥å¸‚ç¬¬åä¸‰å±Šè¿åŠ¨ä¼šå‡»å‰‘æ¯”èµ›ç”·å­èŠ±å‰‘å°‘å¹´ä¹™ç»„(ä¸ªäºº)ç¬¬ä¸‰å', 3, null
+					, BulkColumn from Openrowset( Bulk 'd:\lyx\input_img\huojiang\pics\img008.jpg.jpg', Single_Blob) as a
+				end
+			GO
+			If not exists (Select * from [XX2012].[dbo].[JKHUOJIANG] 
+				where xh='j120406276' and hjlb=1 and hjjf='2014' and hjnr=N'åŒºçº§æ–‡æ˜å­¦ç”Ÿ')
+				Begin
+				Print 'j120406276:'
+				Insert into [XX2012].[dbo].[JKHUOJIANG] ([hjxh], [xh], [hjlb]
+				      ,[hjjf], [cjsj], [hjnr], [hjzt], [ts] 
+				      ,[fj1]
+				) 
+				Select NEWID(), 'j120406276',  1, '2014', GETDATE(), N'åŒºçº§æ–‡æ˜å­¦ç”Ÿ', 3, null
+					, BulkColumn from Openrowset( Bulk 'd:\lyx\input_img\huojiang\pics\img009.jpg.jpg', Single_Blob) as a
+				end
+			GO
+			If not exists (Select * from [XX2012].[dbo].[JKHUOJIANG] 
+				where xh='j120406253' and hjlb=1 and hjjf='2014' and hjnr=N'å¸‚çº§æ–‡æ˜å­¦ç”Ÿ')
+				Begin
+				Print 'j120406253:'
+				Insert into [XX2012].[dbo].[JKHUOJIANG] ([hjxh], [xh], [hjlb]
+				      ,[hjjf], [cjsj], [hjnr], [hjzt], [ts] 
+				      ,[fj1]
+				) 
+				Select NEWID(), 'j120406253',  1, '2014', GETDATE(), N'å¸‚çº§æ–‡æ˜å­¦ç”Ÿ', 3, null
+					, BulkColumn from Openrowset( Bulk 'd:\lyx\input_img\huojiang\pics\img010.jpg.jpg', Single_Blob) as a
+				end
+			GO
+			If not exists (Select * from [XX2012].[dbo].[JKHUOJIANG] 
+				where xh='j120406260' and hjlb=1 and hjjf='2014' and hjnr=N'åŒºçº§æ–‡æ˜å­¦ç”Ÿ')
+				Begin
+				Print 'j120406260:'
+				Insert into [XX2012].[dbo].[JKHUOJIANG] ([hjxh], [xh], [hjlb]
+				      ,[hjjf], [cjsj], [hjnr], [hjzt], [ts] 
+				      ,[fj1]
+				) 
+				Select NEWID(), 'j120406260',  1, '2014', GETDATE(), N'åŒºçº§æ–‡æ˜å­¦ç”Ÿ', 3, null
+					, BulkColumn from Openrowset( Bulk 'd:\lyx\input_img\huojiang\pics\img011.jpg.jpg', Single_Blob) as a
+				end
+			GO
+			If not exists (Select * from [XX2012].[dbo].[JKHUOJIANG] 
+				where xh='j120406251' and hjlb=2 and hjjf='2014' and hjnr=N'å¤©æ´¥å¸‚é’å°‘å¹´ç§‘æŠ€åˆ›æ–°å¤§èµ›æ— çº¿ç”µå·¥ç¨‹æ¯”èµ›ä¸‰ç­‰å¥–')
+				Begin
+				Print 'j120406251:'
+				Insert into [XX2012].[dbo].[JKHUOJIANG] ([hjxh], [xh], [hjlb]
+				      ,[hjjf], [cjsj], [hjnr], [hjzt], [ts] 
+				      ,[fj1]
+				) 
+				Select NEWID(), 'j120406251',  2, '2014', GETDATE(), N'å¤©æ´¥å¸‚é’å°‘å¹´ç§‘æŠ€åˆ›æ–°å¤§èµ›æ— çº¿ç”µå·¥ç¨‹æ¯”èµ›ä¸‰ç­‰å¥–', 3, null
+					, BulkColumn from Openrowset( Bulk 'd:\lyx\input_img\huojiang\pics\img012.jpg.jpg', Single_Blob) as a
+				end
+			GO
+			If not exists (Select * from [XX2012].[dbo].[JKHUOJIANG] 
+				where xh='j120406024' and hjlb=1 and hjjf='2014' and hjnr=N'æ ¡çº§ä¸‰å¥½å­¦ç”Ÿ')
+				Begin
+				Print 'j120406024:'
+				Insert into [XX2012].[dbo].[JKHUOJIANG] ([hjxh], [xh], [hjlb]
+				      ,[hjjf], [cjsj], [hjnr], [hjzt], [ts] 
+				      ,[fj1]
+				) 
+				Select NEWID(), 'j120406024',  1, '2014', GETDATE(), N'æ ¡çº§ä¸‰å¥½å­¦ç”Ÿ', 3, null
+					, BulkColumn from Openrowset( Bulk 'd:\lyx\input_img\huojiang\pics\img013.jpg.jpg', Single_Blob) as a
+				end
+			GO
+			If not exists (Select * from [XX2012].[dbo].[JKHUOJIANG] 
+				where xh='j120406019' and hjlb=1 and hjjf='2014' and hjnr=N'å¸‚çº§æ–‡æ˜å­¦ç”Ÿ')
+				Begin
+				Print 'j120406019:'
+				Insert into [XX2012].[dbo].[JKHUOJIANG] ([hjxh], [xh], [hjlb]
+				      ,[hjjf], [cjsj], [hjnr], [hjzt], [ts] 
+				      ,[fj1]
+				) 
+				Select NEWID(), 'j120406019',  1, '2014', GETDATE(), N'å¸‚çº§æ–‡æ˜å­¦ç”Ÿ', 3, null
+					, BulkColumn from Openrowset( Bulk 'd:\lyx\input_img\huojiang\pics\img014.jpg.jpg', Single_Blob) as a
+				end
+			GO
+			If not exists (Select * from [XX2012].[dbo].[JKHUOJIANG] 
+				where xh='j120406011' and hjlb=2 and hjjf='2014' and hjnr=N'2014-2015å­¦å¹´åº¦ä¸­å­¦(åˆä¸­ è¥¿ç”»)è‰ºæœ¯ç‰¹é•¿ç”Ÿè€ƒæ ¸è®¤å®šä¸­æˆç»©åˆæ ¼')
+				Begin
+				Print 'j120406011:'
+				Insert into [XX2012].[dbo].[JKHUOJIANG] ([hjxh], [xh], [hjlb]
+				      ,[hjjf], [cjsj], [hjnr], [hjzt], [ts] 
+				      ,[fj1]
+				) 
+				Select NEWID(), 'j120406011',  2, '2014', GETDATE(), N'2014-2015å­¦å¹´åº¦ä¸­å­¦(åˆä¸­ è¥¿ç”»)è‰ºæœ¯ç‰¹é•¿ç”Ÿè€ƒæ ¸è®¤å®šä¸­æˆç»©åˆæ ¼', 3, null
+					, BulkColumn from Openrowset( Bulk 'd:\lyx\input_img\huojiang\pics\img015.jpg.jpg', Single_Blob) as a
+				end
+			GO
+			If not exists (Select * from [XX2012].[dbo].[JKHUOJIANG] 
+				where xh='j120406034' and hjlb=2 and hjjf='2014' and hjnr=N'2014-2015å­¦å¹´åº¦ä¸­å­¦(åˆä¸­ èˆè¹ˆ)è‰ºæœ¯ç‰¹é•¿ç”Ÿè€ƒæ ¸è®¤å®šä¸­æˆç»©åˆæ ¼')
+				Begin
+				Print 'j120406034:'
+				Insert into [XX2012].[dbo].[JKHUOJIANG] ([hjxh], [xh], [hjlb]
+				      ,[hjjf], [cjsj], [hjnr], [hjzt], [ts] 
+				      ,[fj1]
+				) 
+				Select NEWID(), 'j120406034',  2, '2014', GETDATE(), N'2014-2015å­¦å¹´åº¦ä¸­å­¦(åˆä¸­ èˆè¹ˆ)è‰ºæœ¯ç‰¹é•¿ç”Ÿè€ƒæ ¸è®¤å®šä¸­æˆç»©åˆæ ¼', 3, null
+					, BulkColumn from Openrowset( Bulk 'd:\lyx\input_img\huojiang\pics\img016.jpg.jpg', Single_Blob) as a
+				end
+			GO
+			If not exists (Select * from [XX2012].[dbo].[JKHUOJIANG] 
+				where xh='j120406234' and hjlb=1 and hjjf='2014' and hjnr=N'å¸‚çº§æ–‡æ˜å­¦ç”Ÿ')
+				Begin
+				Print 'j120406234:'
+				Insert into [XX2012].[dbo].[JKHUOJIANG] ([hjxh], [xh], [hjlb]
+				      ,[hjjf], [cjsj], [hjnr], [hjzt], [ts] 
+				      ,[fj1]
+				) 
+				Select NEWID(), 'j120406234',  1, '2014', GETDATE(), N'å¸‚çº§æ–‡æ˜å­¦ç”Ÿ', 3, null
+					, BulkColumn from Openrowset( Bulk 'd:\lyx\input_img\huojiang\pics\img017.jpg.jpg', Single_Blob) as a
+				end
+			GO
+			If not exists (Select * from [XX2012].[dbo].[JKHUOJIANG] 
+				where xh='j120406338' and hjlb=3 and hjjf='2012' and hjnr=N'ç¬¬å…­å±Šä¸­åæƒ…è‰ºæœ¯é£é‡‡å›½é™…äº¤æµå±•æ¼”è£è·é’¢ç´ä¸“ä¸šå°‘å¹´Aç»„é“¶å¥–')
+				Begin
+				Print 'j120406338:'
+				Insert into [XX2012].[dbo].[JKHUOJIANG] ([hjxh], [xh], [hjlb]
+				      ,[hjjf], [cjsj], [hjnr], [hjzt], [ts] 
+				      ,[fj1]
+				) 
+				Select NEWID(), 'j120406338',  3, '2012', GETDATE(), N'ç¬¬å…­å±Šä¸­åæƒ…è‰ºæœ¯é£é‡‡å›½é™…äº¤æµå±•æ¼”è£è·é’¢ç´ä¸“ä¸šå°‘å¹´Aç»„é“¶å¥–', 3, null
+					, BulkColumn from Openrowset( Bulk 'd:\lyx\input_img\huojiang\pics\img018.jpg.jpg', Single_Blob) as a
+				end
+			GO
+			If not exists (Select * from [XX2012].[dbo].[JKHUOJIANG] 
+				where xh='j120406241' and hjlb=2 and hjjf='2014' and hjnr=N'"ç¾ä¸½ä¸­å›½ æˆ‘çš„ä¸­å›½æ¢¦"è¯»ä¹¦æ•™è‚²æ´»åŠ¨ä¸­,ä¸­å­¦æ¼”è®²ä¼˜ç§€å¥–')
+				Begin
+				Print 'j120406241:'
+				Insert into [XX2012].[dbo].[JKHUOJIANG] ([hjxh], [xh], [hjlb]
+				      ,[hjjf], [cjsj], [hjnr], [hjzt], [ts] 
+				      ,[fj1]
+				) 
+				Select NEWID(), 'j120406241',  2, '2014', GETDATE(), N'"ç¾ä¸½ä¸­å›½ æˆ‘çš„ä¸­å›½æ¢¦"è¯»ä¹¦æ•™è‚²æ´»åŠ¨ä¸­,ä¸­å­¦æ¼”è®²ä¼˜ç§€å¥–', 3, null
+					, BulkColumn from Openrowset( Bulk 'd:\lyx\input_img\huojiang\pics\img019.jpg.jpg', Single_Blob) as a
+				end
+			GO
+			If not exists (Select * from [XX2012].[dbo].[JKHUOJIANG] 
+				where xh='j120406218' and hjlb=1 and hjjf='2014' and hjnr=N'æ ¡çº§ä¸‰å¥½å­¦ç”Ÿ')
+				Begin
+				Print 'j120406218:'
+				Insert into [XX2012].[dbo].[JKHUOJIANG] ([hjxh], [xh], [hjlb]
+				      ,[hjjf], [cjsj], [hjnr], [hjzt], [ts] 
+				      ,[fj1]
+				) 
+				Select NEWID(), 'j120406218',  1, '2014', GETDATE(), N'æ ¡çº§ä¸‰å¥½å­¦ç”Ÿ', 3, null
+					, BulkColumn from Openrowset( Bulk 'd:\lyx\input_img\huojiang\pics\img020.jpg.jpg', Single_Blob) as a
+				end
+			GO
+			If not exists (Select * from [XX2012].[dbo].[JKHUOJIANG] 
+				where xh='j120406218' and hjlb=1 and hjjf='2014' and hjnr=N'åŒºçº§æ–‡æ˜å­¦ç”Ÿ')
+				Begin
+				Print 'j120406218:'
+				Insert into [XX2012].[dbo].[JKHUOJIANG] ([hjxh], [xh], [hjlb]
+				      ,[hjjf], [cjsj], [hjnr], [hjzt], [ts] 
+				      ,[fj1]
+				) 
+				Select NEWID(), 'j120406218',  1, '2014', GETDATE(), N'åŒºçº§æ–‡æ˜å­¦ç”Ÿ', 3, null
+					, BulkColumn from Openrowset( Bulk 'd:\lyx\input_img\huojiang\pics\img021.jpg.jpg', Single_Blob) as a
+				end
+			GO
+			If not exists (Select * from [XX2012].[dbo].[JKHUOJIANG] 
+				where xh='j120406218' and hjlb=4 and hjjf='2014' and hjnr=N'2014å¹´å¤©æ´¥å¸‚å¤§ä¼—è·†æ‹³é“å…¬å¼€èµ›å›¢ä½“äºŒç­‰å¥–')
+				Begin
+				Print 'j120406218:'
+				Insert into [XX2012].[dbo].[JKHUOJIANG] ([hjxh], [xh], [hjlb]
+				      ,[hjjf], [cjsj], [hjnr], [hjzt], [ts] 
+				      ,[fj1]
+				) 
+				Select NEWID(), 'j120406218',  4, '2014', GETDATE(), N'2014å¹´å¤©æ´¥å¸‚å¤§ä¼—è·†æ‹³é“å…¬å¼€èµ›å›¢ä½“äºŒç­‰å¥–', 3, null
+					, BulkColumn from Openrowset( Bulk 'd:\lyx\input_img\huojiang\pics\img022.jpg.jpg', Single_Blob) as a
+				end
+			GO
+			If not exists (Select * from [XX2012].[dbo].[JKHUOJIANG] 
+				where xh='j120406218' and hjlb=2 and hjjf='2013' and hjnr=N'ç¬¬åä¸‰å±Šä¸­å›½æ—¥æŠ¥ç¤¾"21ä¸–çºªæ¯"å…¨å›½ä¸­å°å­¦ç”Ÿè‹±è¯­æ¼”è®²æ¯”èµ›å¤©æ´¥èµ›åŒºå†³èµ›åˆä¸­ç»„ä¸‰ç­‰å¥–')
+				Begin
+				Print 'j120406218:'
+				Insert into [XX2012].[dbo].[JKHUOJIANG] ([hjxh], [xh], [hjlb]
+				      ,[hjjf], [cjsj], [hjnr], [hjzt], [ts] 
+				      ,[fj1]
+				) 
+				Select NEWID(), 'j120406218',  2, '2013', GETDATE(), N'ç¬¬åä¸‰å±Šä¸­å›½æ—¥æŠ¥ç¤¾"21ä¸–çºªæ¯"å…¨å›½ä¸­å°å­¦ç”Ÿè‹±è¯­æ¼”è®²æ¯”èµ›å¤©æ´¥èµ›åŒºå†³èµ›åˆä¸­ç»„ä¸‰ç­‰å¥–', 3, null
+					, BulkColumn from Openrowset( Bulk 'd:\lyx\input_img\huojiang\pics\img023.jpg.jpg', Single_Blob) as a
+				end
+			GO

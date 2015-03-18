@@ -1,4 +1,6 @@
-Encoding.default_internal = "UTF-8"
+# coding: utf-8
+Encoding.default_external = "UTF-8"
+
 require './excel.rb'
 
 class Huojiang
@@ -23,6 +25,7 @@ class Huojiang
 				if row[0]!='文件名'
 				#~ if row[0]=~/^DSC\d{5}\.JPG$/i
 					#~ p row
+					# p row[0].encoding
 					@data<<row
 				end
 			}
